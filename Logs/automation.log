@@ -1,0 +1,52 @@
+2025-07-28 15:21:21 - INFO - This is a test log message.
+2025-07-28 15:23:11 - INFO - *****Test_001_login********
+2025-07-28 15:23:11 - INFO - *****Verifying Home Page Title********
+2025-07-28 15:23:14 - INFO - *****Home Page title is passed********
+2025-07-28 15:23:15 - INFO - *****Verifying the login test********
+2025-07-28 15:23:18 - ERROR - *****Login test title is failed********
+2025-07-28 15:53:14 - INFO - *****Test_001_login********
+2025-07-28 15:53:14 - INFO - *****Verifying Home Page Title********
+2025-07-28 15:53:19 - INFO - *****Home Page title is passed********
+2025-07-28 15:53:21 - INFO - *****Verifying the login test********
+2025-07-28 15:53:35 - ERROR - *****Login test title is failed********
+2025-07-28 15:53:55 - INFO - *****Test_001_login********
+2025-07-28 15:53:55 - INFO - *****Verifying Home Page Title********
+2025-07-28 15:53:57 - INFO - *****Home Page title is passed********
+2025-07-28 15:53:59 - INFO - *****Verifying the login test********
+2025-07-28 17:43:46 - INFO - *****Verifying the login test********
+2025-07-28 17:43:46 - INFO - *****Test_001_login********
+2025-07-28 17:43:46 - INFO - *****Verifying Home Page Title********
+2025-07-28 17:43:50 - ERROR - *****Login test title is failed********
+2025-07-28 17:43:51 - INFO - *****Home Page title is passed********
+2025-07-28 17:44:49 - INFO - *****Verifying the login test********
+2025-07-28 17:44:49 - INFO - *****Test_001_login********
+2025-07-28 17:44:49 - INFO - *****Verifying Home Page Title********
+2025-07-28 17:44:51 - INFO - *****Home Page title is passed********
+2025-07-28 17:44:53 - INFO - *****Login test title is passed********
+2025-07-28 17:48:10 - INFO - *****Test_001_login********
+2025-07-28 17:48:10 - INFO - *****Verifying Home Page Title********
+2025-07-28 17:48:10 - INFO - *****Verifying the login test********
+2025-07-28 17:48:12 - INFO - *****Home Page title is passed********
+2025-07-28 17:48:15 - ERROR - *****Login test title is failed********
+2025-07-28 18:03:00 - INFO - *****Test_001_login********
+2025-07-28 18:03:00 - INFO - *****Verifying Home Page Title********
+2025-07-28 18:03:00 - INFO - *****Verifying the login test********
+2025-07-28 18:03:02 - INFO - *****Home Page title is passed********
+2025-07-28 18:03:04 - INFO - *****Login test title is passed********
+2025-07-28 18:07:04 - INFO - *****Verifying the login test********
+2025-07-28 18:07:04 - INFO - *****Test_001_login********
+2025-07-28 18:07:04 - INFO - *****Verifying Home Page Title********
+2025-07-28 18:07:06 - INFO - *****Home Page title is passed********
+2025-07-28 18:07:09 - INFO - *****Login test title is passed********
+2025-07-28 18:09:03 - INFO - *****Verifying the login test********
+2025-07-28 18:09:03 - INFO - *****Test_001_login********
+2025-07-28 18:09:03 - INFO - *****Verifying Home Page Title********
+2025-07-28 18:09:18 - INFO - *****Home Page title is passed********
+2025-07-28 18:09:18 - INFO - *****Login test title is passed********
+2025-07-28 19:39:02 - INFO - *****Verifying the login test********
+2025-07-28 19:39:02 - INFO - *****Verifying the login test********
+2025-07-28 19:39:11 - INFO - *****passed********
+2025-07-28 19:39:17 - INFO - *****passed********
+2025-07-28 19:39:22 - INFO - *****passed********
+2025-07-28 19:39:28 - INFO - *****passed********
+2025-07-28 19:39:28 - INFO - ****Login DDT test passed*****
