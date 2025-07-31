@@ -1,5 +1,7 @@
 import os
 
+import pytest
+
 from pageObjects.LoginPage import Login
 from testCases.conftest import setup
 from utilities.readProperties import ReadConfig
@@ -8,11 +10,13 @@ from utilities.customLogger import LogGen
 
 class Test_001_login:
 
-   baseURL=ReadConfig.getApllicationURL()
+   baseURL=ReadConfig.getApplicationURL()
    username=ReadConfig.getuserName()
    password=ReadConfig.getPassword()
    logger=LogGen.loggen()
 
+   @pytest.mark.sanity
+   @pytest.mark.regression
    def test_homePageTItle(self,setup):
      self.logger.info("*****Test_001_login********")
      self.logger.info("*****Verifying Home Page Title********")
@@ -30,6 +34,7 @@ class Test_001_login:
          assert False
 
 
+   @pytest.mark.regression
    def test_login(self,setup):
        self.logger.info("*****Verifying the login test********")
        self.driver = setup

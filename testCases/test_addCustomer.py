@@ -2,6 +2,8 @@ import random
 import string
 import time
 
+import pytest
+
 from pageObjects.LoginPage import Login
 from pageObjects.add_customer import AddCustomer
 from utilities.customLogger import LogGen
@@ -19,6 +21,8 @@ class Test_003_AddCustomer:
     password = ReadConfig.getPassword()
     logger = LogGen.loggen()
 
+    @pytest.mark.sanity
+    @pytest.mark.regression
     def test_addCustomer(self,setup):
         self.logger.info("*********TEst_003_AddCustomer")
         self.driver=setup
@@ -33,6 +37,7 @@ class Test_003_AddCustomer:
 
         self.logger.info("*******Starting Add Customer Test**********")
         self.cust=AddCustomer(self.driver)
+        time.sleep(10)
         self.cust.clickOnCustomer()
         time.sleep(5)
 

@@ -1,6 +1,7 @@
 import time
 from re import search
 
+import pytest
 import self
 
 from pageObjects.LoginPage import Login
@@ -17,6 +18,8 @@ class Test_005_SearchCustomer():
  password = ReadConfig.getPassword()
  logger = LogGen.loggen()
 
+
+ @pytest.mark.regression
  def test_searchCustomerByName(self,setup):
   self.driver=setup
   self.driver.get(self.baseURL)

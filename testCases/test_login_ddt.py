@@ -1,6 +1,8 @@
 import os
 import time
 
+import pytest
+
 from pageObjects.LoginPage import Login
 from testCases.conftest import setup
 from utilities.readProperties import ReadConfig
@@ -10,10 +12,11 @@ from utilities import excel_utils
 
 class Test_002_DDT_login:
 
-   baseURL=ReadConfig.getApllicationURL()
+   baseURL=ReadConfig.getApplicationURL()
    path=".//testData//LoginData.xlsx"
    logger=LogGen.loggen()
 
+   @pytest.mark.regression
    def test_DDT_login(self,setup):
        self.logger.info("*****Verifying the login test********")
        self.logger.info("*****Verifying the login test********")
