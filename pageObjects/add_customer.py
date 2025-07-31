@@ -1,12 +1,14 @@
 import time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class AddCustomer():
     # Add customer Page:
-    customers_xpath = "//a[@href='#']//span[contains(text(),'Customers')]"
-    customers_1_xpath = "//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]"
+    customers_xpath = "//a[@href='#']//p[contains(text(),'Customers')]"
+    customers_1_xpath = "(//p[contains(text(),'Customers')])[2]"
     new_button_xpath = "//i[@class='fas fa-square-plus']"
     email_xpath = "//input[@id='Email']"
     password_xpath = "//input[@id='Password']"
@@ -15,7 +17,7 @@ class AddCustomer():
     gender_xpath = "//input[@id='Gender_Male']"
     company_name_xpath = "//input[@id='Company']"
     istaxexempt_xpath = "//input[@id='IsTaxExempt']"
-    newsletter_xpath = "//span[@aria-expanded='true']//input[@role='searchbox']"
+    newsletter_xpath = "(//input[@role='searchbox'])[1]"
     nopadminstore_xpath = "//li[contains(text(),'nopCommerce admin demo store')]"
     customerroles_xpath = "//span[@aria-expanded='true']//ul[@class='select2-selection__rendered']"
     registered_xpath = "(//li[@id='select2-SelectedCustomerRoleIds-result-e0qr-3'])[1]"
@@ -61,26 +63,47 @@ class AddCustomer():
             checkbox.click()
 
     def selectNewsLetter(self):
-        self.driver.find_element(By.XPATH, self.newsletter_xpath).click()
-        self.driver.find_element(By.XPATH, self.nopadminstore_xpath).click()
+        try:
+            newsletter_input = WebDriverWait(self.driver, 10).until(
+                EC.element_to_be_clickable((By.XPATH, self.newsletter_xpath))
+            )
+            newsletter_input.click()
+            time.sleep(1)
+
+            store_option = WebDriverWait(self.driver, 10).until(
+                EC.visibility_of_element_located((By.XPATH, self.nopadminstore_xpath))
+            )
+            self.driver.execute_script("arguments[0].scrollIntoView(true);", store_option)
+            self.driver.execute_script("arguments[0].click();", store_option)
+
+            print("✅ Newsletter option selected.")
+        except Exception as e:
+            print("❌ Failed to select newsletter option:", str(e))
+            self.driver.save_screenshot("newsletter_error.png")
+            raise
 
     def clickOnCustomerRoles(self, role):
-        self.driver.find_element(By.XPATH, self.customerroles_xpath).click()
-        time.sleep(5)
-        if role == 'Registered':
-            self.listitem = self.driver.find_element(By.XPATH, self.registered_xpath)
-        elif role == "Adminstrators":
-            self.listitem = self.driver.find_element(By.XPATH, self.admin_xpath)
-        elif role == "Guests":
-            self.driver.find_element(By.XPATH, self.registered_xpath).click()
-            self.listitem = self.driver.find_element(By.XPATH, self.guests_xpath)
-        elif role == "Vendors":
-            self.listitem = self.driver.find_element(By.XPATH, self.vendors_xpath)
-        else:
-            self.listitem = self.driver.find_element(By.XPATH, self.guests_xpath)
+        def clickOnCustomerRoles(self, role):
+            self.driver.find_element(By.XPATH, self.customerroles_xpath).click()
+            time.sleep(5)
+            if role == 'Registered':
+                self.listitem = self.driver.find_element(By.XPATH, self.registered_xpath)
+            elif role == "Adminstrators":
+                self.listitem = self.driver.find_element(By.XPATH, self.admin_xpath)
+            elif role == "Guests":
+                self.driver.find_element(By.XPATH, self.registered_xpath).click()
+                self.listitem = self.driver.find_element(By.XPATH, self.guests_xpath)
+            elif role == "Vendors":
+                self.listitem = self.driver.find_element(By.XPATH, self.vendors_xpath)
+            else:
+                self.listitem = self.driver.find_element(By.XPATH, self.guests_xpath)
 
-        time.sleep(5)
-        self.driver.execute_script("arguments[0].click();", self.listitem)  # fixed syntax
+            time.sleep(5)
+            self.driver.execute_script("arguments[0].click();", self.listitem)
+
+
+
+
 
     def selectVendor(self, value):
         drp_down = self.driver.find_element(By.XPATH, self.vendor_xpath)

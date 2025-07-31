@@ -4,18 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60584e8-2cef-4ef4-bd67-9fc17a1f4272" name="Changes" comment="Framework day 1">
-      <change afterPath="$PROJECT_DIR$/configurations/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pageObjects/add_customer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testCases/test_login_ddt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testData/LoginData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/customLogger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/excel_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/readProperties.py" afterDir="false" />
+    <list default="true" id="c60584e8-2cef-4ef4-bd67-9fc17a1f4272" name="Changes" comment="Framework day 3">
+      <change afterPath="$PROJECT_DIR$/pageObjects/SearchCustomerPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCases/test_addCustomer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCases/test_searchCustomerByEmail.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testCases/test_searchCustomerByName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/nopCommerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nopCommerce.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Screenshots/test_login.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/test_login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pageObjects/add_customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/pageObjects/add_customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/readProperties.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/readProperties.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +40,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/chandubhanu/hybrid_framework.git&quot;,
-    &quot;accountId&quot;: &quot;0b6dced5-9003-4ae5-b871-d012316fa224&quot;
+    &quot;accountId&quot;: &quot;89b1a540-b367-45f4-b2fc-9d55f16d8b0c&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -52,23 +54,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test_login.Test_001_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login.Test_001_login.test_homePageTItle.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login.Test_001_login.test_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python.conftest.executor&quot;: &quot;Run&quot;,
-    &quot;Python.customLogger.executor&quot;: &quot;Run&quot;,
-    &quot;Python.log_test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cprakash/PycharmProjects/nopCommerce&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test_login.Test_001_login.executor": "Run",
+    "Python tests.Python tests for test_login.Test_001_login.test_homePageTItle.executor": "Run",
+    "Python tests.Python tests for test_login.Test_001_login.test_login.executor": "Run",
+    "Python.SearchCustomerPage.executor": "Run",
+    "Python.conftest.executor": "Run",
+    "Python.customLogger.executor": "Run",
+    "Python.log_test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/cprakash/PycharmProjects/nopCommerce",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\cprakash\PycharmProjects\nopCommerce\utilities" />
@@ -79,7 +88,29 @@
       <recent name="C:\Users\cprakash\PycharmProjects\nopCommerce" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.conftest">
+  <component name="RunManager" selected="Python.SearchCustomerPage">
+    <configuration name="SearchCustomerPage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pageObjects" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pageObjects/SearchCustomerPage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="conftest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="ENV_FILES" value="" />
@@ -93,6 +124,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testCases/conftest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -115,6 +147,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utilities/customLogger.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -137,6 +170,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/log_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -156,33 +190,19 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_login.Test_001_login.test_homePageTItle&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_login.Test_001_login.test_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.Test_001_login.test_login&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.SearchCustomerPage" />
         <item itemvalue="Python.conftest" />
         <item itemvalue="Python.customLogger" />
         <item itemvalue="Python.log_test" />
         <item itemvalue="Python tests.Python tests for test_login.Test_001_login.test_homePageTItle" />
-        <item itemvalue="Python tests.Python tests for test_login.Test_001_login.test_login" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +220,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1753082719777</updated>
+      <workItem from="1753859712212" duration="315000" />
+      <workItem from="1753860086251" duration="287000" />
     </task>
     <task id="LOCAL-00001" summary="Framework day 1">
       <option name="closed" value="true" />
@@ -217,11 +239,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753166063588</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Framework day 3">
+      <option name="closed" value="true" />
+      <created>1753852788701</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753852788701</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Framework day 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework day 1" />
+    <MESSAGE value="Framework day 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework day 3" />
   </component>
 </project>

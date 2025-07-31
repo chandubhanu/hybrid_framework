@@ -1,0 +1,42 @@
+import time
+from re import search
+
+import self
+
+from pageObjects.LoginPage import Login
+from pageObjects.SearchCustomerPage import SearchCustomer
+from pageObjects.add_customer import AddCustomer
+from testCases.conftest import setup
+from utilities.customLogger import LogGen
+from utilities.readProperties import ReadConfig
+
+
+class Test_004_SearchCustomer():
+ baseURL = ReadConfig.getApplicationURL()
+ username = ReadConfig.getuserName()
+ password = ReadConfig.getPassword()
+ logger = LogGen.loggen()
+
+ def test_searchCustomerByEmail(self,setup):
+  self.driver=setup
+  self.driver.get(self.baseURL)
+  self.driver.maximize_window()
+  self.lp=Login(self.driver)
+  self.lp.setUserName(self.username)
+  self.lp.setPassword(self.password)
+  self.lp.clickLogin()
+
+  self.cus=AddCustomer(self.driver)
+  self.cus.clickOnCustomer()
+  time.sleep(10)
+  self.cus.clickONCustomers_1()
+
+  search = SearchCustomer(self.driver)
+  search.email("steve_gates@nopCommerce.com")
+  search.clickSearchButton()
+  time.sleep(10)
+  status=search.searchCustomerByEmail("steve_gates@nopCommerce.com")
+  assert True==status
+
+
+
