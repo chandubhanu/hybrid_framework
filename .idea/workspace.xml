@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60584e8-2cef-4ef4-bd67-9fc17a1f4272" name="Changes" comment="Framework day 3">
-      <change afterPath="$PROJECT_DIR$/testCases/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_addCustomer.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_addCustomer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_login_ddt.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_login_ddt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_searchCustomerByEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_searchCustomerByEmail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testCases/test_searchCustomerByName.py" beforeDir="false" afterPath="$PROJECT_DIR$/testCases/test_searchCustomerByName.py" afterDir="false" />
+    <list default="true" id="c60584e8-2cef-4ef4-bd67-9fc17a1f4272" name="Changes" comment="Framework day 4">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_1_2025_11_46_AM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_8_1_2025_11_47_AM_[Changes]/shelved.patch" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +21,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Bhanuprakash &lt;69953928+chandubhanu@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -262,15 +261,36 @@
       <option name="project" value="LOCAL" />
       <updated>1753940625293</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Framework day 4">
+      <option name="closed" value="true" />
+      <created>1754029017569</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754029017569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Framework day 1" />
     <MESSAGE value="Framework day 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework day 3" />
+    <MESSAGE value="Framework day 4.1" />
+    <MESSAGE value="Framework day 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework day 4" />
   </component>
 </project>
